@@ -3,13 +3,94 @@
 <head>
   <title>Lds</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <!-- CSS Global Compulsory-->
+  <%= stylesheet_link_tag 	('style')%>
+  <%= stylesheet_link_tag 	('header1')%>
+  <%= stylesheet_link_tag 	('style_responsive')%>
+  <%= stylesheet_link_tag 	('bootstrap-responsive')%>
+  <!-- CSS Implementing Plugins -->
+  <%= stylesheet_link_tag 	('font-awesome')%>
+  <%= stylesheet_link_tag 	('flexslider')%>
+  <%= stylesheet_link_tag 	('parallax-slider')%>
+  <!-- CSS Theme -->
+  <%= stylesheet_link_tag 	('default')%>
+  <%= stylesheet_link_tag 	('flexslider')%>
+  <%= stylesheet_link_tag 	('parallax-slider')%>         
+  <!-- JS Global Compulsory -->
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag ('modernizr.custom') %>
+        
+<script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>   
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<!-- JS Implementing Plugins -->
+<%= javascript_include_tag ('jquery.flexslider-min') %>
+<%= javascript_include_tag ('jquery.cslider') %>
+<%= javascript_include_tag ('back-to-top') %>
+<%= javascript_include_tag ('modernizr') %>                    
+<!-- JS Page Level -->
+<!--<%= javascript_include_tag ('app') %>-->
+
+<%= javascript_include_tag ('index') %> 
+ 
+<!--[if lt IE 9]>
+    <script src="assets/js/respond.js"></script>
+<![endif]-->
+
+
   <%= csrf_meta_tags %>
 
 </head>
 <body>
 
 <%= yield %>
+<script type="text/javascript">
+   $(window).load(function() {
 
+  $('#clients-flexslider').flexslider({
+                animation: "slide",
+                easing: "swing",
+                animationLoop: true,
+                itemWidth: 1,
+                itemMargin: 1,
+                minItems: 2,
+                maxItems: 9,
+                controlNav: false,
+                directionNav: false,
+                move: 2
+            });
+   $('#photo-flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                itemWidth: 80,
+                itemMargin: 0
+            }); 
+            
+            $('#testimonal_carousel').collapse({
+                toggle: false
+            });
+
+
+});
+</script>
+
+<script type="text/javascript">
+
+ $(window).load(function() {
+
+	
+				$('#da-slider').cslider();
+
+
+});
+</script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+    });
+</script>
 </body>
 </html>

@@ -13,22 +13,23 @@
     <meta name="author" content="">
 
     <!-- CSS Global Compulsory-->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/headers/header1.css">
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="assets/css/style_responsive.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/stylesheets/bootstrap.min.css">
+     <!-- CSS Global Compulsory<link rel="stylesheet" href="assets/stylesheets/style.css">-->
+   
     <link rel="shortcut icon" href="favicon.ico">        
     <!-- CSS Implementing Plugins -->    
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css" type="text/css" media="screen">      
-    <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css" type="text/css">
-    <!-- CSS Theme -->    
-    <link rel="stylesheet" href="assets/css/themes/default.css" id="style_color">
-    <link rel="stylesheet" href="assets/css/themes/headers/default.css" id="style_color-header-1">    
+
+   
 </head> 
 
 <body>
+<div class="navbar-fixed-top" id="color-bars">
+      <div id="bar-1" class="color-bar"></div>
+      <div id="bar-2" class="color-bar"></div>
+      <div id="bar-3" class="color-bar"></div>
+      <div id="bar-4" class="color-bar"></div>
+      <div id="bar-5" class="color-bar"></div>
+    </div>
 <!--=== Style Switcher ===-->    
 <i class="style-switcher-btn icon-cogs"></i>
 <div class="style-switcher">
@@ -43,8 +44,8 @@
     </ul>
 </div><!--/style-switcher-->
 <!--=== End Style Switcher ===-->    
-
-<!--=== Top ===-->    
+<div class="fondo-blanco"><!--=== Header cabezera ===-->
+    <!--=== Top ===-->    
 <div class="top">
     <div class="container">         
         <ul class="loginbar pull-right">
@@ -63,14 +64,13 @@
         </ul>
     </div>      
 </div><!--/top-->
-<!--=== End Top ===-->    
-
+<!--=== End Top ===--> 
 <!--=== Header ===-->
 <div class="header">               
     <div class="container"> 
         <!-- Logo -->       
         <div class="logo">                                             
-            <a href="index.html"><img id="logo-header" src="assets/img/logo1-default.png" alt="Logo"></a>
+            <a href="index.html"><img id="logo-header" src="/img/logo-1.png" alt="Logo" style="height: 49px; width: 103px;"></a>
         </div><!-- /logo -->        
                                     
         <!-- Menu -->       
@@ -84,7 +84,7 @@
                 <div class="nav-collapse collapse">                                     
                     <ul class="nav top-2">
                         <li class="active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio
                                 <b class="caret"></b>                            
                             </a>
                             <ul class="dropdown-menu">
@@ -100,7 +100,7 @@
                             <b class="caret-out"></b>                        
                         </li>
                         <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Pages
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Compañia
                                 <b class="caret"></b>                            
                             </a>
                             <ul class="dropdown-menu">
@@ -123,7 +123,7 @@
                             <b class="caret-out"></b>                        
                         </li>
                         <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Features
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Servicios
                                 <b class="caret"></b>                            
                             </a>
                             <ul class="dropdown-menu">
@@ -140,7 +140,7 @@
                             <b class="caret-out"></b>                        
                         </li>
                         <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proyectos
                                 <b class="caret"></b>                            
                             </a>
                             <ul class="dropdown-menu">
@@ -165,7 +165,7 @@
                             <b class="caret-out"></b>                        
                         </li>
                         <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacto
                                 <b class="caret"></b>                            
                             </a>
                             <ul class="dropdown-menu">
@@ -190,7 +190,16 @@
     </div><!-- /container -->               
 </div><!--/header -->      
 <!--=== End Header ===-->
+</div><!--=== Header cabezera ===-->
 
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+    });
+</script>
 <!--=== Slider ===-->
 <div class="slider-inner">
     <div id="da-slider" class="da-slider">
@@ -204,7 +213,7 @@
             <p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i></p>
             <div class="da-img span6">
                 <div class="span6">
-                    <iframe src="http://player.vimeo.com/video/47911018" width="100%" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+                    <iframe src="http://player.vimeo.com/video/62265162" width="100%" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
                 </div>
             </div>
         </div>
@@ -220,47 +229,78 @@
     </div><!--/da-slider-->
 </div><!--/slider-->
 <!--=== End Slider ===-->
-
+<div>
+</div>
 <!--=== Purchase Block ===-->
+<div class="fondo-azul">
 <div class="row-fluid purchase margin-bottom-30">
     <div class="container">
         <div class="span9">
-            <span>Unify is a clean and fully responsive incredible Template.</span>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat.</p>
+            <span>Empresa colombiana que presta servicios de ingeniería y consultoría para la industria de hidrocarburos y en el sector energético.</span>
+            <p></p>
         </div>
-        <a href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697" class="btn-buy hover-effect">Purchase Now</a>
+        <a href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697" class="btn-buy hover-effect">Leer Mas</a>
     </div>
 </div><!--/row-fluid-->
+</div>
 <!-- End Purchase Block -->
 
+    
 <!--=== Content Part ===-->
 <div class="container"> 
     <!-- Service Blocks -->
     <div class="row-fluid">
-        <div class="span4">
+        <div class="span3">
             <div class="service clearfix">
-                <i class="icon-resize-small"></i>
                 <div class="desc">
-                    <h4>Fully Responsive</h4>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                    <h4>Asesoría y negociación de tierras</h4>
+                    <ul class="unstyled">
+                        <li>Reconocimiento de terrenos.</li>
+                        <li>Estudio de títulos.</li>
+                        <li>Avalúo y negociación de predios.</li>
+                        <li>Obtención de permisos.</li>
+                        <li>Legalización de predios.</li>
+                    </ul>
                 </div>
             </div>  
         </div>
-        <div class="span4">
+        <div class="span3">
             <div class="service clearfix">
-                <i class="icon-cogs"></i>
                 <div class="desc">
-                    <h4>HTML5 + CSS3</h4>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                    <h4>Asesoría legal</h4>
+                    <ul class="unstyled">
+                        <li>Supervisión legal del proyecto en su etapa de exploración y explotación.</li>
+                        <li>Supervisión legal de servidumbres.</li>
+                        <li>Peritajes.</li>
+                        <li>Amparos policivos de las servidumbres.</li>
+                    </ul>
                 </div>
             </div>  
         </div>
-        <div class="span4">
+        <div class="span3">
             <div class="service clearfix">
-                <i class="icon-plane"></i>
                 <div class="desc">
-                    <h4>Launch Ready</h4>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                    <h4>Obras civiles</h4>
+                     <ul class="unstyled">
+                        <li>Estructuras en concreto.</li>
+                        <li>Edificaciones y obras arquitectónicas.</li>
+                        <li>Locaciones y facilidades.</li>
+                        <li>AExplanaciones y vías de acceso.</li>
+                        <li>Obras de urbanismo.</li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="span3">
+            <div class="service clearfix">
+               <!-- <i class="icon-plane"></i>-->
+                <div class="desc">
+                    <h4>Consultoría e interventoría</h4>
+                    <ul class="unstyled">
+                        <li>En infraestructura vial.</li>
+                        <li>Redes de acueducto y Alcantarillado.</li>
+                        <li>Obras de urbanismo.</li>
+                    </ul>
                 </div>
             </div>  
         </div>              
@@ -268,13 +308,13 @@
     <!-- //End Service Blokcs -->
 
     <!-- Recent Works -->
-    <div class="headline"><h3>Recent Works</h3></div>
+    <div class="headline"><h3>Reciente Noticias</h3></div>
     <ul class="thumbnails">
         <li class="span3">
             <div class="thumbnail-style thumbnail-kenburn">
                 <div class="thumbnail-img">
-                    <div class="overflow-hidden"><img src="assets/img/carousel/2.jpg" alt="" /></div>
-                    <a class="btn-more hover-effect" href="#">read more +</a>                   
+                    <div class="overflow-hidden"><img src="/img/2.jpg" alt="" /></div>
+                    <a class="btn-more hover-effect" href="#">Leer Mas +</a>                   
                 </div>
                 <h3><a class="hover-effect" href="#">Our Work</a></h3>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
@@ -283,8 +323,8 @@
         <li class="span3">
             <div class="thumbnail-style thumbnail-kenburn">
                 <div class="thumbnail-img">
-                    <div class="overflow-hidden"><img src="assets/img/carousel/3.jpg" alt="" /></div>
-                    <a class="btn-more hover-effect" href="#">read more +</a>                   
+                    <div class="overflow-hidden"><img src="/img/3.jpg" alt="" /></div>
+                    <a class="btn-more hover-effect" href="#">Leer Mas +</a>                   
                 </div>
                 <h3><a class="hover-effect" href="#">One More Work</a></h3>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
@@ -293,7 +333,7 @@
         <li class="span3">
             <div class="thumbnail-style thumbnail-kenburn">
                 <div class="thumbnail-img">
-                    <div class="overflow-hidden"><img src="assets/img/carousel/9.jpg" alt="" /></div>
+                    <div class="overflow-hidden"><img src="/img/9.jpg" alt="" /></div>
                     <a class="btn-more hover-effect" href="#">read more +</a>                   
                 </div>
                 <h3><a class="hover-effect" href="#">Another Work</a></h3>
@@ -303,7 +343,7 @@
         <li class="span3">
             <div class="thumbnail-style thumbnail-kenburn">
                 <div class="thumbnail-img">
-                    <div class="overflow-hidden"><img src="assets/img/carousel/10.jpg" alt="" /></div>
+                    <div class="overflow-hidden"><img src="/img/10.jpg" alt="" /></div>
                     <a class="btn-more hover-effect" href="#">read more +</a>                   
                 </div>
                 <h3><a class="hover-effect" href="#">Huge Work</a></h3>
@@ -312,45 +352,39 @@
         </li>
     </ul><!--/thumbnails-->
     <!-- //End Recent Works -->
-    
+    <div class="container">
     <!-- Information Blokcs -->
     <div class="row-fluid margin-bottom-20">
         <!-- Who We Are -->
         <div class="span8">
-            <div class="headline"><h3>Welcome To UNIFY Template</h3></div>
-            <p><img class="pull-left lft-img-margin img-width-200" src="assets/img/carousel/6.jpg" alt="" />Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals. It works on all major web browsers, tablets and phone.</p> 
-            <ul class="unstyled">
-                <li><i class="icon-ok color-green"></i> Donec id elit non mi porta gravida</li>
-                <li><i class="icon-ok color-green"></i> Corporate and Creative</li>
-                <li><i class="icon-ok color-green"></i> Responsive Bootstrap Template</li>
-                <li><i class="icon-ok color-green"></i> Corporate and Creative</li>
-            </ul><br>
-
+            <div class="headline"><h3>LDS Ingeniería y Gestión Inmobiliaria Ltda.</h3></div>
+            <p><img class="pull-left lft-img-margin img-width-200" src="/img/6-1.jpg" alt="" />LDS Ingeniería y Gestión Inmobiliaria Ltda., presta servicios al sector público y privado en las áreas técnica y legal, relacionados con gestión inmobiliaria, constitución de servidumbres, asesoría y negociación de tierras, consultoría, interventoría, atención a comunidades, construcción de obras civiles y facilidades, en procesos de sísmica, exploración, explotación y producción de hidrocarburos.</p> 
+        
             <blockquote class="hero-unify">
-                <p>Award winning digital agency. We bring a personal and effective approach to every project we work on, which is why. Unify is an incredibly beautiful responsive Bootstrap Template for corporate professionals.</p>
-                <small>CEO, Jack Bour</small>
+                <p>LDS mantiene contacto permanente con las comunidades de las zonas en donde se desarrollan los proyectos. Antes y durante la ejecución de los mismos, convocamos reuniones informativas sobre las diferentes etapas del proceso. También acompaña procesos de resolución de conflictos con los propietarios de las zonas intervenidas.</p>
+                <small>Representante Legal, Sandra Paola Bonilla Torres</small>
             </blockquote>
         </div><!--/span8-->        
 
         <!-- Latest Shots -->
         <div class="span4">
-            <div class="headline"><h3>Latest Shots</h3></div>
+            <div class="headline"><h3>Responsabilidad</h3></div>
             <div id="myCarousel" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img src="assets/img/carousel/5.jpg" alt="">
+                    <img src="/img/carousel/5.jpg" alt="">
                     <div class="carousel-caption">
                       <p>Cras justo odio, dapibus ac facilisis in, egestas.</p>
                     </div>
                   </div>
                   <div class="item">
-                    <img src="assets/img/carousel/4.jpg" alt="">
+                    <img src="/img/carousel/4.jpg" alt="">
                     <div class="carousel-caption">
                       <p>Cras justo odio, dapibus ac facilisis in, egestas.</p>
                     </div>
                   </div>
                   <div class="item">
-                    <img src="assets/img/carousel/3.jpg" alt="">
+                    <img src="/img/carousel/3.jpg" alt="">
                     <div class="carousel-caption">
                       <p>Cras justo odio, dapibus ac facilisis in, egestas.</p>
                     </div>
@@ -365,111 +399,111 @@
         </div><!--/span4-->
     </div><!--/row-fluid--> 
     <!-- //End Information Blokcs -->
-
+</div>
     <!-- Our Clients -->
     <div id="clients-flexslider" class="flexslider home clients">
-        <div class="headline"><h3>Our Clients</h3></div>    
+        <div class="headline"><h3>Nuestros Clientes</h3></div>    
         <ul class="slides">
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/hp_grey.png" alt="" /> 
-                    <img src="assets/img/clients/hp.png" class="color-img" alt="" />
+                    <img src="/img/clients/hp_grey.png" alt="" /> 
+                    <img src="/img/clients/hp.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/igneus_grey.png" alt="" /> 
-                    <img src="assets/img/clients/igneus.png" class="color-img" alt="" />
+                    <img src="/img/clients/igneus_grey.png" alt="" /> 
+                    <img src="/img/clients/igneus.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/vadafone_grey.png" alt="" /> 
-                    <img src="assets/img/clients/vadafone.png" class="color-img" alt="" />
+                    <img src="/img/clients/vadafone_grey.png" alt="" /> 
+                    <img src="/img/clients/vadafone.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/walmart_grey.png" alt="" /> 
-                    <img src="assets/img/clients/walmart.png" class="color-img" alt="" />
+                    <img src="/img/clients/walmart_grey.png" alt="" /> 
+                    <img src="/img/clients/walmart.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/shell_grey.png" alt="" /> 
-                    <img src="assets/img/clients/shell.png" class="color-img" alt="" />
+                    <img src="/img/clients/shell_grey.png" alt="" /> 
+                    <img src="/img/clients/shell.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/natural_grey.png" alt="" /> 
-                    <img src="assets/img/clients/natural.png" class="color-img" alt="" />
+                    <img src="/img/clients/natural_grey.png" alt="" /> 
+                    <img src="/img/clients/natural.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/aztec_grey.png" alt="" /> 
-                    <img src="assets/img/clients/aztec.png" class="color-img" alt="" />
+                    <img src="/img/clients/aztec_grey.png" alt="" /> 
+                    <img src="/img/clients/aztec.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/gamescast_grey.png" alt="" /> 
-                    <img src="assets/img/clients/gamescast.png" class="color-img" alt="" />
+                    <img src="/img/clients/gamescast_grey.png" alt="" /> 
+                    <img src="/img/clients/gamescast.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/cisco_grey.png" alt="" /> 
-                    <img src="assets/img/clients/cisco.png" class="color-img" alt="" />
+                    <img src="/img/clients/cisco_grey.png" alt="" /> 
+                    <img src="/img/clients/cisco.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/everyday_grey.png" alt="" /> 
-                    <img src="assets/img/clients/everyday.png" class="color-img" alt="" />
+                    <img src="/img/clients/everyday_grey.png" alt="" /> 
+                    <img src="/img/clients/everyday.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/cocacola_grey.png" alt="" /> 
-                    <img src="assets/img/clients/cocacola.png" class="color-img" alt="" />
+                    <img src="/img/clients/cocacola_grey.png" alt="" /> 
+                    <img src="/img/clients/cocacola.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/spinworkx_grey.png" alt="" /> 
-                    <img src="assets/img/clients/spinworkx.png" class="color-img" alt="" />
+                    <img src="/img/clients/spinworkx_grey.png" alt="" /> 
+                    <img src="/img/clients/spinworkx.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/shell_grey.png" alt="" /> 
-                    <img src="assets/img/clients/shell.png" class="color-img" alt="" />
+                    <img src="/img/clients/shell_grey.png" alt="" /> 
+                    <img src="/img/clients/shell.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/natural_grey.png" alt="" /> 
-                    <img src="assets/img/clients/natural.png" class="color-img" alt="" />
+                    <img src="/img/clients/natural_grey.png" alt="" /> 
+                    <img src="/img/clients/natural.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/gamescast_grey.png" alt="" /> 
-                    <img src="assets/img/clients/gamescast.png" class="color-img" alt="" />
+                    <img src="/img/clients/gamescast_grey.png" alt="" /> 
+                    <img src="/img/clients/gamescast.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/everyday_grey.png" alt="" /> 
-                    <img src="assets/img/clients/everyday.png" class="color-img" alt="" />
+                    <img src="/img/clients/everyday_grey.png" alt="" /> 
+                    <img src="/img/clients/everyday.png" class="color-img" alt="" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="assets/img/clients/spinworkx_grey.png" alt="" /> 
-                    <img src="assets/img/clients/spinworkx.png" class="color-img" alt="" />
+                    <img src="/img/clients/spinworkx_grey.png" alt="" /> 
+                    <img src="/img/clients/spinworkx.png" class="color-img" alt="" />
                 </a>
             </li>
         </ul>
@@ -502,19 +536,19 @@
                 <div class="posts">
                     <div class="headline"><h3>Recent Blog Entries</h3></div>
                     <dl class="dl-horizontal">
-                        <dt><a href="#"><img src="assets/img/sliders/elastislide/6.jpg" alt="" /></a></dt>
+                        <dt><a href="#"><img src="/img/footer/6.jpg" alt="" /></a></dt>
                         <dd>
                             <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p> 
                         </dd>
                     </dl>
                     <dl class="dl-horizontal">
-                    <dt><a href="#"><img src="assets/img/sliders/elastislide/10.jpg" alt="" /></a></dt>
+                    <dt><a href="#"><img src="/img/footer/10.jpg" alt="" /></a></dt>
                         <dd>
                             <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p> 
                         </dd>
                     </dl>
                     <dl class="dl-horizontal">
-                    <dt><a href="#"><img src="assets/img/sliders/elastislide/11.jpg" alt="" /></a></dt>
+                    <dt><a href="#"><img src="/img/footer/11.jpg" alt="" /></a></dt>
                         <dd>
                             <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p> 
                         </dd>
@@ -558,35 +592,12 @@
                 <p>2013 &copy; Unify. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
             <div class="span4"> 
-                <a href="index.html"><img id="logo-footer" src="assets/img/logo2-default.png" class="pull-right" alt="" /></a>
+                <a href="index.html"><img id="logo-footer" src="/img/footer/logo2-default.png" class="pull-right" alt="" /></a>
             </div>
         </div><!--/row-fluid-->
     </div><!--/container--> 
 </div><!--/copyright--> 
-<!--=== End Copyright ===-->
 
-<!-- JS Global Compulsory -->           
-<script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>        
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-<!-- JS Implementing Plugins -->           
-<script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script> 
-<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-<!-- JS Page Level -->           
-<script type="text/javascript" src="assets/js/app.js"></script>
-<script type="text/javascript" src="assets/js/pages/index.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        App.init();
-        App.initSliders();
-        Index.initParallaxSlider();
-    });
-</script>
-<!--[if lt IE 9]>
-    <script src="assets/js/respond.js"></script>
-<![endif]-->
 
 </body>
 </html> 

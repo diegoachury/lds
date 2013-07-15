@@ -222,9 +222,9 @@
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:focus {
-  	color:#0f4bac;	
+  	color:#72c02c;	
   	text-decoration:none;
-	border-bottom:solid 2px #0f73d3;
+	border-bottom:solid 2px #72c02c;
   	background:none;	
   	-webkit-box-shadow:none;
        -moz-box-shadow:none;
