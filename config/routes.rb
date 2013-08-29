@@ -5,6 +5,7 @@ Lds::Application.routes.draw do
   get "home/historia"
   get "home/responsabilidad"
   get "home/organizacion"
+  get "home/operacion"
   root :to => 'home#index'
 
   # The priority is based upon order of creation:

@@ -19,4 +19,7 @@ class HomeController < ApplicationController
   def organizacion
   	
   end
+  def operacion
+    
+  end
 end
