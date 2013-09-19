@@ -1,236 +1,403 @@
-<style>
-body{
-  background-color: #0074ef;
-}
-.container-narrow {
-        margin: 0 auto;
-        max-width: 900px;
-      }
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->  
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>LDS Ingenieria</title>
 
- /*creando cuadro de texto*/
- .cuadrado{
-  -moz-border-radius: 20px;
--webkit-border-radius: 20px;
-border-radius: 20px;
-/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
--moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;
-/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
- }
+    <!-- CSS Global Compulsory-->
+     <!-- CSS Global Compulsory<link rel="stylesheet" href="assets/stylesheets/style.css">-->
+   
+    <link rel="shortcut icon" href="favicon.ico">        
+    <!-- CSS Implementing Plugins -->    
 
-/*
-Color Bars
-*/
-#color-bars{
-  z-index:1000;
-  position:fixed;
-  height:8px;
-  margin:0px;
-  padding:0px;
-  display:block;
-  width:100%;
-  background:#0f5552;
-}
-.color-bar{
-  float:left;
-  height:10px;
-  display:block;
-  width:20%;
-}
-#bar-1{background:#0f4bac;  }
-#bar-2{background:#0f73d3;  }
-#bar-3{background-color:#0fa3b8;  }
-#bar-4{background-color:#0fac51;  }
-#bar-5{background-color:#0f5552;  }
-/*
---*/
-.logo-px{
-position:absolute;
-left:100px;
-top:0px;
-height: 250px;
-width: 142px;
+   
+</head> 
 
-}
-.container-fx {
-        margin: 0 auto;
-        max-width: 1300px;
-      }
-     
-
-</style>
-  <div class="navbar-fixed-top" id="color-bars">
-      <div id="bar-1" class="color-bar"></div>
-      <div id="bar-2" class="color-bar"></div>
-      <div id="bar-3" class="color-bar"></div>
-      <div id="bar-4" class="color-bar"></div>
-      <div id="bar-5" class="color-bar"></div>
-    </div>
-        
-<div class="container-fx" style="background-color: #0068d8; padding: 10px; ">
-
-<div class="container-narrow" ><!--barra de nav-->
-<div class="masthead">
-        <ul class="nav nav-pills pull-right" style=" padding:60px;">
-          <li class="active"><a href="#">Inicio</a></li>
-          <li><a href="#">Compañia</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Contactenos</a></li>
-        </ul>
-        <div>
-          <img src="/img/logo-1.png" style="height: 150px; width: 200px;" >
+<body>
+<!--=== Slider ===-->
+<div class="slider-inner">
+    <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+            <h2><i>Baneer &amp; pruebassr</i> <br /> <i>Baneer</i> <br /> <i>Baneer</i></h2>
+            <p><i>Baneer Baneer Baneer Baneer</i> <br /> <i>Baneer Baneer Baneer</i> <br /> <i>Baneer Baneer </i></p>
+            <div class="da-img"><img src="/img/plano.jpg" alt="" /></div>
         </div>
-        
-      </div>
-  </div><!--finaliza nav -->
-</div>
-  <div class="container">
-      <div id="myCarousel" class="carousel slide"><!--carrusel -->
-        <div class="carousel-inner"><!-- Carousel items -->
-          <div class="active item"><img src="/img/img1.jpg"></div>
-          <div class="item"><img src="/img/img2.jpg"></div>
-          <div class="item"><img src="/img/img3.jpg"></div>
-        </div><!-- Carousel nav -->
-    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-  </div><!--finaliza carrusel -->
-</div>
-<div class="container"><!--inicia container documentacion -->
-  <div class="row-fluid"><!--Documentacion-noticia -->
-  <div class="span4"><!--columna 1 -->
-    <div class="cuadrado"><!--articulo 1 -->
-       <h3>Nuestra empresa</h3>
-    <p>Empresa colombiana  que presta servicios de ingeniería y consultoría para la industria de hidrocarburos y en el sector energético, tanto en Colombia como en Perú, desde hace más de 20 años, se especializa en procesos de ingeniería, consultoría e interventoría, gestión inmobiliaria, asesoría y negociación de tierras en las áreas técnica y legal, auditorías en procesos sísmicos y atención a comunidades. En todos ellos garantiza la satisfacción de los requisitos del cliente, dando aseguramiento legal a la operación, asegurando la calidad con eficacia, transparencia y ética profesional.</p>
-    <a href="#">Ver Mas</a>
-    </div><!--finaliza articulo 1 -->
-    <div><!--inicia articulo 2-abajo -->
-      <ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#respo1" data-toggle="tab">Medio Ambiente</a></li>
-              <li class=""><a href="#respo2" data-toggle="tab">Responsabilidad Social</a></li>
-            </ul>
-      <div id="myTabContent" class="tab-content">
-              <div class="tab-pane fade active in" id="respo1">
-                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-              </div>
-              <div class="tab-pane fade" id="respo2">
-                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-              </div>
+        <div class="da-slide">
+            <h2><i>Baneer VIDEO</i> <br /> <i>Baneer Baneer</i> <br /> <i>Baneer Baneer</i></h2>
+            <p><i>Baneer Baneer Baneer Baneer</i> <br /> <i>Baneer Baneer ut</i></p>
+            <div class="da-img span6">
+                <div class="span6">
+                    <iframe src="http://player.vimeo.com/video/62265162" width="100%" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+                </div>
             </div>
-  
-    </div><!--finaliza articulo 2 abajo -->   
-  </div>
-  <div class="span4"><!--columna 2 -->
-    <div><!-- inicia video -->
-      <h3>Nuestro Equipo</h3>
-      <iframe width="300" height="315" src="http://www.youtube.com/embed/SH1jKZwcS9Y" frameborder="0" allowfullscreen></iframe>
-  </div><!--finaliza video -->
-  <div><!--articulo 2 abajo-->
-   <div class="accordion" id="accordion2">
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                      Servicios #1
-                    </a>
-                  </div>
-                  <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
-                    <div class="accordion-inner">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                      servicios #2
-                    </a>
-                  </div>
-                  <div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
-                    <div class="accordion-inner">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                      servicios #3
-                    </a>
-                  </div>
-                  <div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
-                    <div class="accordion-inner">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-              </div>
-  </div><!--finaliza articulo 2 abajo-->
-</div><!-- finaliza columna 2 -->
-  <div class="span4"><!--columna 3 -->
-    <div><!--publicidad ambientas -->
-      <h3>publicidad ambiental</h3>
-       <img src="/img/img1.jpg" style ="height: 291px; width:308px;">
-    </div><!--finaliza publicidad ambiental -->
-    <div><!--inicia articulo 2 abajo -->
-      <h3>Certificados</h3>
-      <p>
-        certificados 1 
-      </p>
+        </div>
+        <div class="da-slide">
+            <h2><i>Baneer BEST Baneer</i> <br /> <i>Baneer WITH</i> <br /> <i>Baneer/Baneer</i></h2>
+            <p><i>Baneer ipsum Baneer amet</i> <br /> <i>Baneer Baneer ut</i> <br /> <i>Baneer Baneer </i></p>
+            <div class="da-img"><img src="/img/html5andcss3.png" alt="image01" /></div>
+        </div>
+        <nav class="da-arrows">
+            <span class="da-arrows-prev"></span>
+            <span class="da-arrows-next"></span>        
+        </nav>
+    </div><!--/da-slider-->
+</div><!--/slider-->
+<!--=== End Slider ===-->
+<div>
+</div>
+<!--=== Purchase Block ===-->
+<div class="fondo-azul">
+<div class="row-fluid purchase margin-bottom-30">
+    <div class="container">
+        <div class="span9">
+            <span>Empresa colombiana que presta servicios de ingeniería y consultoría para la industria de hidrocarburos y en el sector energético.</span>
+            <p></p>
+        </div>
+        <a href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697" class="btn-buy hover-effect">Leer más</a>
     </div>
-  </div>
-</div><!--finaliza documentacion -->
-</div><!--finaliza container documentacion -->
-<div class="container">
-  <div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="#">Title</a>
-    <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
-  </div>
+</div><!--/row-fluid-->
 </div>
-</div>
-<div class="container">
-<div class="row">
-  <ul class="thumbnails">
-              <li class="span4">
-                <div class="thumbnail">
-                  <img data-src="holder.js/300x200" alt="300x200" style="width: 300px; height: 200px;" src="">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span4">
-                <div class="thumbnail">
-                  <img data-src="holder.js/300x200" alt="300x200" style="width: 300px; height: 200px;" src="">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span4">
-                <div class="thumbnail">
-                  <img data-src="holder.js/300x200" alt="300x200" style="width: 300px; height: 200px;" src="">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            </div>
+<!-- End Purchase Block -->
 
+    
+<!--=== Content Part ===-->
+<div class="container"> 
+    <!-- Service Blocks -->
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="service clearfix">
+                <div class="desc">
+                    <h4>Asesoría y negociación de tierras</h4>
+                    <ul class="unstyled">
+                        <li>Reconocimiento de terrenos.</li>
+                        <li>Estudio de títulos.</li>
+                        <li>Avalúo y negociación de predios.</li>
+                        <li>Obtención de permisos.</li>
+                        <li>Legalización de predios.</li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="span3">
+            <div class="service clearfix">
+                <div class="desc">
+                    <h4>Asesoría legal</h4>
+                    <ul class="unstyled">
+                        <li>Supervisión legal del proyecto en su etapa de exploración y explotación.</li>
+                        <li>Supervisión legal de servidumbres.</li>
+                        <li>Peritajes.</li>
+                        <li>Amparos policivos de las servidumbres.</li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="span3">
+            <div class="service clearfix">
+                <div class="desc">
+                    <h4>Obras civiles</h4>
+                     <ul class="unstyled">
+                        <li>Estructuras en concreto.</li>
+                        <li>Edificaciones y obras arquitectónicas.</li>
+                        <li>Locaciones y facilidades.</li>
+                        <li>AExplanaciones y vías de acceso.</li>
+                        <li>Obras de urbanismo.</li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="span3">
+            <div class="service clearfix">
+               <!-- <i class="icon-plane"></i>-->
+                <div class="desc">
+                    <h4>Consultoría e interventoría</h4>
+                    <ul class="unstyled">
+                        <li>En infraestructura vial.</li>
+                        <li>Redes de acueducto y Alcantarillado.</li>
+                        <li>Obras de urbanismo.</li>
+                    </ul>
+                </div>
+            </div>  
+        </div>              
+    </div><!--/row-fluid-->
+    <!-- //End Service Blokcs -->
+
+    <!-- Recent Works -->
+    <div class="headline"><h3>Reciente Noticias</h3></div>
+    <ul class="thumbnails">
+        <li class="span3">
+            <div class="thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden"><img src="/img/2.jpg" alt="" /></div>
+                    <a class="btn-more hover-effect" href="#">Leer más +</a>                   
+                </div>
+                <h3><a class="hover-effect" href="#">Our Work</a></h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden"><img src="/img/3.jpg" alt="" /></div>
+                    <a class="btn-more hover-effect" href="#">Leer más +</a>                   
+                </div>
+                <h3><a class="hover-effect" href="#">One More Work</a></h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden"><img src="/img/9.jpg" alt="" /></div>
+                    <a class="btn-more hover-effect" href="#">Leer más +</a>                   
+                </div>
+                <h3><a class="hover-effect" href="#">Another Work</a></h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden"><img src="/img/10.jpg" alt="" /></div>
+                    <a class="btn-more hover-effect" href="#">Leer más +</a>                   
+                </div>
+                <h3><a class="hover-effect" href="#">Huge Work</a></h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
+            </div>
+        </li>
+    </ul><!--/thumbnails-->
+    <!-- //End Recent Works -->
+    <div class="container">
+    <!-- Information Blokcs -->
+    <div class="row-fluid margin-bottom-20">
+        <!-- Who We Are -->
+        <div class="span8">
+            <div class="headline"><h3>LDS Ingeniería y Gestión Inmobiliaria Ltda.</h3></div>
+            <p><img class="pull-left lft-img-margin img-width-200" src="/img/6-1.jpg" alt="" />LDS Ingeniería y Gestión Inmobiliaria Ltda., presta servicios al sector público y privado en las áreas técnica y legal, relacionados con gestión inmobiliaria, constitución de servidumbres, asesoría y negociación de tierras, consultoría, interventoría, atención a comunidades, construcción de obras civiles y facilidades, en procesos de sísmica, exploración, explotación y producción de hidrocarburos.</p> 
+        
+            <blockquote class="hero-unify">
+                <p>LDS mantiene contacto permanente con las comunidades de las zonas en donde se desarrollan los proyectos. Antes y durante la ejecución de los mismos, convocamos reuniones informativas sobre las diferentes etapas del proceso. También acompaña procesos de resolución de conflictos con los propietarios de las zonas intervenidas.</p>
+                <small>Representante Legal, Sandra Paola Bonilla Torres</small>
+            </blockquote>
+        </div><!--/span8-->        
+
+        <!-- Latest Shots -->
+        <div class="span4">
+            <div class="headline"><h3>Responsabilidad</h3></div>
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="/img/carousel/r-01.jpg" alt="">
+                    <div class="carousel-caption">
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/img/carousel/r-02.jpg" alt="">
+                    <div class="carousel-caption">
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/img/carousel/r-03.jpg" alt="">
+                    <div class="carousel-caption">
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-arrow">
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="icon-angle-left"></i></a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="icon-angle-right"></i></a>
+                </div>
+            </div>
+        </div><!--/span4-->
+    </div><!--/row-fluid--> 
+    <!-- //End Information Blokcs -->
 </div>
-  
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+    <!-- Our Clients -->
+    <div id="clients-flexslider" class="flexslider home clients">
+        <div class="headline"><h3>Nuestros Clientes</h3></div>    
+        <ul class="slides">
+            <li>
+                <a href="#">
+                    <img src="/img/clients/ecopetrol_grey.png" alt="" /> 
+                    <img src="/img/clients/ecopetrol.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/hocol_grey.png" alt="" /> 
+                    <img src="/img/clients/hocol-1.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/oxy_grey.png" alt="" /> 
+                    <img src="/img/clients/oxy.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/petrobras_grey.png" alt="" /> 
+                    <img src="/img/clients/petrobras.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/invias_grey.png" alt="" /> 
+                    <img src="/img/clients/invias.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/accion-social_grey.png" alt="" /> 
+                    <img src="/img/clients/accionsocial.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/emerald_grey.png" alt="" /> 
+                    <img src="/img/clients/emerald.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/isa_grey.png" alt="" /> 
+                    <img src="/img/clients/isa.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/isvi_grey.png" alt="" /> 
+                    <img src="/img/clients/isvi.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/fidu_grey.png" alt="" /> 
+                    <img src="/img/clients/fidu.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/idu_grey.png" alt="" /> 
+                    <img src="/img/clients/idu.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/energia_grey.png" alt="" /> 
+                    <img src="/img/clients/energia-integral.png" class="color-img" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/img/clients/gran-tierra_grey.png" alt="" /> 
+                    <img src="/img/clients/gran-tierra.png" class="color-img" alt="" />
+                </a>
+            </li>
+        </ul>
+    </div><!--/flexslider-->
+    <!-- //End Our Clients -->
+</div><!--/container-->     
+<!-- End Content Part -->
+
+<!--=== Footer ===-->
+<div class="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span4">
+                <!-- About -->
+                <div class="headline"><h3>Sobre LDS</h3></div>  
+                <p class="margin-bottom-25">Empresa colombiana que presta servicios de ingeniería y consultoría para la industria de hidrocarburos y en el sector energético.</p>    
+
+                <!-- Monthly Newsletter -->
+                <div class="headline"><h3>Boletín Mensual</h3></div> 
+                <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+                <form class="form-inline">
+                    <div class="input-append">
+                        <input type="text" placeholder="Email Address" class="input-medium">
+                        <button class="btn-u">Subscribe</button>
+                    </div>
+                </form>                         
+            </div><!--/span4--> 
+            
+            <div class="span4">
+                <div class="posts">
+                    <div class="headline"><h3>Noticias Recientes</h3></div>
+                    <dl class="dl-horizontal">
+                        <dt><a href="#"><img src="/img/footer/6.jpg" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">Baneer Baneer Baneer Baneer is Baneer incredibly Baneer responsive Baneer Baneer</a></p> 
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                    <dt><a href="#"><img src="/img/footer/10.jpg" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">Baneer moon Baneer Baneer is an Baneer Baneer responsive Baneer Baneer</a></p> 
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                    <dt><a href="#"><img src="/img/footer/11.jpg" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">Baneer moon Baneer Baneer is Baneer Baneer Baneer responsive Baneer Baneer</a></p> 
+                        </dd>
+                    </dl>
+                </div>
+            </div><!--/span4-->
+
+            <div class="span4">
+                <!-- Monthly Newsletter -->
+                <div class="headline"><h3>Contacto</h3></div> 
+                <address>
+                    Avenida 19 N°118-30 Oficina 510 <br />
+                    Bogotá D.C. <br />
+                    Teléfono: 6296835 / 6293741 <br />
+                    Calle 21 N°5 Bis 21 Oficina 402 <br />
+                    Huila, Neiva <br />
+                    Teléfono: 8741722 <br />
+                    Email: <a href="mailto:serviciocliente@ldsingenieria.com.co" class="">serviciocliente@ldsingenieria.com.co</a>
+                </address>
+
+                <!-- Stay Connected -->
+                <div class="headline"><h3>Redes Sociales</h3></div> 
+                <ul class="social-icons">
+                    <li><a href="#" data-original-title="Feed" class="social_rss"></a></li>
+                    <li><a href="#" data-original-title="Facebook" class="social_facebook"></a></li>
+                    <li><a href="#" data-original-title="Twitter" class="social_twitter"></a></li>
+                    <li><a href="#" data-original-title="Goole Plus" class="social_googleplus"></a></li>
+                    <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li>
+                    <li><a href="#" data-original-title="Linkedin" class="social_linkedin"></a></li>
+                    <li><a href="#" data-original-title="Vimeo" class="social_vimeo"></a></li>
+                </ul>
+            </div><!--/span4-->
+        </div><!--/row-fluid--> 
+    </div><!--/container--> 
+</div><!--/footer-->    
+<!--=== End Footer ===-->
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span8">                     
+                <p>2013 &copy; LDSIngenieria. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+            <div class="span4"> 
+                <a href="index.html"><img id="logo-footer" src="/img/footer/logo_lubu.png" class="pull-right" alt="" /></a>
+            </div>
+        </div><!--/row-fluid-->
+    </div><!--/container--> 
+</div><!--/copyright--> 
+
+
+</body>
+</html> 

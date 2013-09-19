@@ -1,3 +1,4 @@
+
 var App = function () {
 
     function handleIEFixes() {
@@ -24,6 +25,7 @@ var App = function () {
     }
 
     function handleBootstrap() {
+        jQuery.noConflict();
         jQuery('.carousel').carousel({
             interval: 15000,
             pause: 'hover'
