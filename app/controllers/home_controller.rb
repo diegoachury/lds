@@ -7,7 +7,7 @@ class HomeController < ApplicationController
 
   def servicio
   end
-  def Historia
+  def historia
   	
   end
   def organizacion
@@ -19,7 +19,10 @@ class HomeController < ApplicationController
   def organizacion
   	
   end
-  def operacion
+  def proyecto
+    
+  end
+  def contacto
     
   end
 end

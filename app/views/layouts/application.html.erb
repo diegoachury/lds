@@ -1,7 +1,19 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->  
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-  <title>Lds</title>
+   <title>LDS Ingenieria</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS Global Compulsory-->
+    <!-- CSS Global Compulsory<link rel="stylesheet" href="assets/stylesheets/style.css">-->   
+  <link rel="shortcut icon" href="favicon.ico">        
+  <!-- CSS Implementing Plugins -->    
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <!-- CSS Global Compulsory-->
   <%= stylesheet_link_tag 	('style')%>
@@ -16,32 +28,8 @@
   <!-- CSS Theme -->
   <%= stylesheet_link_tag 	('default')%>
   <%= stylesheet_link_tag 	('flexslider')%>
-  <%= stylesheet_link_tag 	('parallax-slider')%>         
-  <!-- JS Global Compulsory -->
-  <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag ('modernizr.custom') %>
-<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>          
-<!-- JS Implementing Plugins -->
-<%= javascript_include_tag ('jquery.flexslider-min') %>
-<%= javascript_include_tag ('jquery.cslider') %>
-<%= javascript_include_tag ('back-to-top') %>
-<%= javascript_include_tag ('modernizr') %>                    
-<!-- JS Page Level -->
-<%= javascript_include_tag ('app') %>
-<%= javascript_include_tag ('index') %> 
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        App.init();
-        App.initSliders();
-        Index.initParallaxSlider();
-    });
-</script>
- 
-<!--[if lt IE 9]>
-    <script src="assets/js/respond.js"></script>
-<![endif]-->
-
-
+  <%= stylesheet_link_tag 	('parallax-slider')%>
+  <!--Time-line-->
   <%= csrf_meta_tags %>
 
 </head>
@@ -51,8 +39,37 @@
 <%= yield %>
 
 
+ <!-- javascript -->
+ <!-- JS Global Compulsory -->
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag ('modernizr.custom') %>
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>          
+<!-- JS Implementing Plugins -->
+<%= javascript_include_tag ('jquery.flexslider-min') %>
+<%= javascript_include_tag ('jquery.cslider') %>
+<%= javascript_include_tag ('back-to-top') %>
+<%= javascript_include_tag ('modernizr') %>
+<%= javascript_include_tag ('bootstrap-tooltip') %>
 
-<script type="text/javascript">
+<!-- time line -->                 
+<!-- JS Page Level -->
+<%= javascript_include_tag ('app') %>
+<%= javascript_include_tag ('index') %> 
+<!--tooltip bootstrap -->
+<script>
+$(document).ready(function(){
+    $("[rel=tooltip]").tooltip({ placement: 'right'});
+});
+</script>
+<!--finaliza tooltip bootstrap -->
+<script>
+    jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+    });
+</script>
+<script>
    $(window).load(function() {
 
   $('#clients-flexslider').flexslider({
